@@ -1,0 +1,33 @@
+.container {
+  width: 30em;
+  margin: 0 auto;
+}
+.text,
+.textViolet {
+  text-align: center;
+  font-size: 1.398em;
+  line-height: 115%;
+}
+.textViolet {
+  margin: 0.67em 0;
+  color: var(--violetSoft);
+}
+.form {
+  margin-top: 1em;
+  /* display: grid;
+  grid-template-columns: repeat(3, 1fr); */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.8em;
+}
+.label {
+  font-size: 1.165em;
+  display: flex;
+  flex-direction: column;
+}
+.input {
+  width: 7.6em;
+  padding: 0.8em;
+  border-radius: 0.8em;
+}

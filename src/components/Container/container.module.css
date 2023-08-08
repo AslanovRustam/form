@@ -1,0 +1,14 @@
+.section {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../../images/frameBg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.backDrop {
+  width: 100vw;
+  height: 100vh;
+  background: var(--bg);
+  backdrop-filter: blur(0.2em);
+}

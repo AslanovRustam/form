@@ -1,0 +1,9 @@
+:root {
+  --bg: rgba(0, 0, 0, 0.6);
+  --white: #ffffff;
+  --violet: #9665eb;
+  --violetSoft: #c0b6ff;
+  --grey: #646464;
+  --greyLight: #d6d6d6;
+  --gradient: linear-gradient(#9a35ff, #6ba8f1);
+}

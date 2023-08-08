@@ -1,0 +1,39 @@
+/* @import-normalize; */
+@import "../node_modules/modern-normalize/modern-normalize.css";
+@import "./vars.css";
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+html,
+body {
+  box-sizing: border-box;
+  font-size: 2.2vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  height: 100%;
+  overflow-x: hidden;
+  color: var(--white);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}

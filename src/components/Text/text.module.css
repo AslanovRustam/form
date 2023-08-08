@@ -1,0 +1,17 @@
+.container {
+  position: relative;
+  width: 29.3em;
+  margin: 0 auto;
+  padding-top: 39em;
+  /* top: -52em; */
+}
+.image {
+  width: 100%;
+}
+.text {
+  position: absolute;
+  bottom: 2.2em;
+  margin-left: 1.5em;
+  font-size: 1.63em;
+  font-weight: 500;
+}

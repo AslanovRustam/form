@@ -1,0 +1,28 @@
+.main {
+  position: relative;
+  height: 100%;
+  margin: 0 1em;
+  background: url("../../images/cardBg.png");
+  background-repeat: no-repeat;
+  background-size: 43.5em 71em;
+  background-position: 0 23em;
+}
+.cardBg {
+  width: 43.5em;
+  margin-top: 23em;
+  z-index: -1;
+}
+.girl {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+.bg {
+  width: 43.47em;
+  position: absolute;
+  top: 5em;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+}

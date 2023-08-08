@@ -1,0 +1,27 @@
+.container {
+  position: absolute;
+  transform: translate(-50%);
+  left: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3em;
+  height: 3em;
+  font-size: 2.86em;
+  color: var(--greyLight);
+  background-image: var(--gradient);
+  border-radius: 50%;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 3.2em;
+}
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5em;
+  height: 2.5em;
+  border-radius: 50%;
+  color: var(--greyLight);
+  background-color: var(--white);
+}
