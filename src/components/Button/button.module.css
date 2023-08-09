@@ -9,7 +9,7 @@
   height: 3em;
   font-size: 2.86em;
   color: var(--greyLight);
-  background-image: var(--gradient);
+  background: var(--greyLight);
   border-radius: 50%;
   font-weight: 700;
   text-transform: uppercase;
@@ -23,10 +23,16 @@
   width: 2.5em;
   height: 2.5em;
   border-radius: 50%;
-  color: var(--greyLight);
   background-color: var(--white);
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
 .arrow {
   width: 1.18em;
+}
+.adult {
+  background: var(--gradient);
+}
+.adultText {
+  color: var(--grey);
 }

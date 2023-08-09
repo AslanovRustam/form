@@ -1,9 +1,16 @@
 import box1 from "../../images/box1.png";
 import box2 from "../../images/box2.png";
 import box3 from "../../images/box3.png";
+import { data } from "../../data";
 import s from "./form.module.css";
 
-export default function Form({ step, formData, onSelectBox, setFormData }) {
+export default function Form({
+  step,
+  formData,
+  onSelectBox,
+  setFormData,
+  dateInput,
+}) {
   const renderForm = () => {
     switch (step) {
       case 1:
@@ -22,13 +29,9 @@ export default function Form({ step, formData, onSelectBox, setFormData }) {
                 <input
                   className={s.input}
                   type="number"
+                  name="day"
                   value={formData.age.day}
-                  onChange={(e) => {
-                    setFormData({
-                      ...formData,
-                      age: { ...formData.age, day: e.target.value },
-                    });
-                  }}
+                  onChange={dateInput}
                   placeholder="01"
                 />
               </label>
@@ -37,13 +40,9 @@ export default function Form({ step, formData, onSelectBox, setFormData }) {
                 <input
                   className={s.input}
                   type="number"
+                  name="month"
                   value={formData.age.month}
-                  onChange={(e) => {
-                    setFormData({
-                      ...formData,
-                      age: { ...formData.age, month: e.target.value },
-                    });
-                  }}
+                  onChange={dateInput}
                   placeholder="11"
                 />
               </label>
@@ -52,13 +51,9 @@ export default function Form({ step, formData, onSelectBox, setFormData }) {
                 <input
                   className={s.input}
                   type="number"
+                  name="year"
                   value={formData.age.year}
-                  onChange={(e) => {
-                    setFormData({
-                      ...formData,
-                      age: { ...formData.age, year: e.target.value },
-                    });
-                  }}
+                  onChange={dateInput}
                   placeholder="1990"
                 />
               </label>
@@ -128,6 +123,34 @@ export default function Form({ step, formData, onSelectBox, setFormData }) {
                 />
               </label>
             </form>
+          </>
+        );
+      case 3:
+        return (
+          <>
+            <p className={s.textStart}>Вам начислено:</p>
+            <ul className={s.list}>
+              {data.map(({ id, image, title, description }) => (
+                <li className={s.item} key={id}>
+                  <p className={s.number}>{id}</p>
+                  <img className={s.icon} src={image} alt="bonus1" />
+                  <div>
+                    <p className={s.infoTitle}>{title}</p>
+                    <p className={s.infoDescription}>{description}</p>
+                  </div>
+                </li>
+              ))}
+            </ul>
+            <p className={s.text}>Следуйте далее, что бы забрать бонусы</p>
+          </>
+        );
+      case 4:
+        return (
+          <>
+            <p className={s.textStart}>
+              я создам для вас аккаунт, на который будут начислены
+              сгенерированные бонусы
+            </p>
           </>
         );
 

@@ -1,11 +1,11 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Text from "../Text/Text";
 import Form from "../Form/Form";
+import Button from "../Button/Button";
 import girl from "../../images/girl.png";
 import bg from "../../images/bg.png";
-import cardBg from "../../images/cardBg.png";
+// import cardBg from "../../images/cardBg.png";
 import s from "./main.module.css";
-import Button from "../Button/Button";
 
 export default function Main() {
   const [step, setStep] = useState(1);
@@ -16,10 +16,15 @@ export default function Main() {
     password: "",
     adult: false,
   });
+
+  useEffect(() => {
+    checkAdult();
+  }, [formData.age]);
+
   const onSelectBox = (e) => {
     setFormData({ ...formData, box: e.target.value });
   };
-  console.log(formData);
+
   const text = () => {
     switch (step) {
       case 1:
@@ -34,7 +39,41 @@ export default function Main() {
         return null;
     }
   };
-  console.log(text());
+  const checkAdult = () => {
+    const {
+      age: { day, month, year },
+    } = formData;
+    if (day === "" || month === "" || year === "") {
+      return 0;
+    }
+    const now = new Date(); //Текущя дата
+    const today = new Date(now.getFullYear(), now.getMonth(), now.getDate()); //Текущя дата без времени
+    const dob = new Date(Number(year), Number(month), Number(day)); //Дата рождения
+    const dobnow = new Date(today.getFullYear(), dob.getMonth(), dob.getDate()); //ДР в текущем году
+    let age = today.getFullYear() - dob.getFullYear();
+    if (today < dobnow) {
+      age = age - 1;
+    }
+    if (age > 17 && age < 70) {
+      setFormData({ ...formData, adult: true });
+    } else {
+      setFormData({ ...formData, adult: false });
+    }
+  };
+
+  const dateInput = (e) => {
+    const { value, name } = e.target;
+    setFormData({
+      ...formData,
+      age: { ...formData.age, [name]: value },
+    });
+  };
+
+  const onNextStep = () => {
+    if (formData.adult) {
+      setStep(step + 1);
+    }
+  };
   return (
     <div className={s.main}>
       {/* <img className={s.cardBg} src={cardBg} alt="cardBg" /> */}
@@ -46,13 +85,9 @@ export default function Main() {
         formData={formData}
         onSelectBox={onSelectBox}
         setFormData={setFormData}
+        dateInput={dateInput}
       />
-      <Button
-        step={step}
-        click={() => {
-          setStep(step + 1);
-        }}
-      />
+      <Button step={step} adult={formData.adult} click={onNextStep} />
     </div>
   );
 }
