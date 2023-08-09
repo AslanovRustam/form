@@ -1,9 +1,13 @@
 .container {
+  position: absolute;
+  transform: translate(-50%);
+  left: 50%;
   width: 30em;
   margin: 0 auto;
 }
 .text,
-.textViolet {
+.textViolet,
+.textStart {
   text-align: center;
   font-size: 1.398em;
   line-height: 115%;
@@ -12,22 +16,81 @@
   margin: 0.67em 0;
   color: var(--violetSoft);
 }
+.textStart {
+  text-align: start;
+}
 .form {
   margin-top: 1em;
-  /* display: grid;
-  grid-template-columns: repeat(3, 1fr); */
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   gap: 0.8em;
 }
-.label {
+.label,
+.labelCheckbox {
   font-size: 1.165em;
   display: flex;
   flex-direction: column;
+}
+.labelCheckbox {
+  align-items: center;
 }
 .input {
   width: 7.6em;
   padding: 0.8em;
   border-radius: 0.8em;
+}
+
+.imageContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1em 0 1em 0;
+  width: 8.8em;
+  height: 8.8em;
+  background: var(--grey2);
+  border-radius: 1.4em;
+}
+.imageBox {
+  width: 8em;
+  height: 8em;
+  background-color: var(--greyLight);
+  border-radius: 1.4em;
+}
+.coloredBorder {
+  transition: all 0.3s ease-in-out;
+  background: var(--gradient);
+}
+.image {
+  width: 10em;
+}
+
+.checkBox {
+  appearance: none;
+  width: 2.4em;
+  height: 2.4em;
+  border-radius: 0.5em;
+  margin-right: 0.5em;
+  border: 0.15em solid var(--grey2);
+  outline: none;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.checkBox:hover,
+.checkBox:focus {
+  border-color: var(--violet);
+}
+.checkBox:checked {
+  background: var(--greyLight);
+  border-color: transparent;
+  position: relative;
+}
+
+.checkBox:checked::before {
+  content: "\2714";
+  position: absolute;
+  font-size: 1.5em;
+  font-weight: 600;
+  color: var(--bg);
+  left: 0.3em;
+  top: 0.1em;
 }

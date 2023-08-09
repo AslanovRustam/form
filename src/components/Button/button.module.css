@@ -13,7 +13,8 @@
   border-radius: 50%;
   font-weight: 700;
   text-transform: uppercase;
-  margin-top: 3.2em;
+  /* margin-top: 3.2em; */
+  margin-top: 10.5em;
 }
 .btn {
   display: flex;
@@ -24,4 +25,8 @@
   border-radius: 50%;
   color: var(--greyLight);
   background-color: var(--white);
+  cursor: pointer;
+}
+.arrow {
+  width: 1.18em;
 }
