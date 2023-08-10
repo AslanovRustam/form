@@ -147,10 +147,34 @@ export default function Form({
       case 4:
         return (
           <>
-            <p className={s.textStart}>
+            <p className={s.textStartSignUp}>
               я создам для вас аккаунт, на который будут начислены
               сгенерированные бонусы
             </p>
+            <form className={s.formSignUp}>
+              <label className={s.labelSignUp}>
+                <span>Email</span>
+                <input
+                  className={s.inputSignUp}
+                  type="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={dateInput}
+                  placeholder="adamweiss@gmail.com"
+                />
+              </label>
+              <label className={s.labelSignUp}>
+                <span>Password</span>
+                <input
+                  className={s.inputSignUp}
+                  type="password"
+                  name="password"
+                  value={formData.password}
+                  onChange={dateInput}
+                  placeholder="************"
+                />
+              </label>
+            </form>
           </>
         );
 

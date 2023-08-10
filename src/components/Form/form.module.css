@@ -7,7 +7,8 @@
 }
 .text,
 .textViolet,
-.textStart {
+.textStart,
+.textStartSignUp {
   text-align: center;
   font-size: 1.398em;
   line-height: 115%;
@@ -16,7 +17,8 @@
   margin: 0.67em 0;
   color: var(--violetSoft);
 }
-.textStart {
+.textStart,
+.textStartSignUp {
   text-align: start;
 }
 .form {
@@ -26,7 +28,8 @@
   gap: 0.8em;
 }
 .label,
-.labelCheckbox {
+.labelCheckbox,
+.labelSignUp {
   font-size: 1.165em;
   display: flex;
   flex-direction: column;
@@ -34,10 +37,16 @@
 .labelCheckbox {
   align-items: center;
 }
-.input {
+.input,
+.inputSignUp {
   width: 7.6em;
   padding: 0.8em;
   border-radius: 0.8em;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 .imageContainer {
@@ -124,4 +133,20 @@
 .infoDescription {
   color: var(--white);
   font-size: 1.166em;
+}
+.formSignUp {
+  display: flex;
+  flex-direction: column;
+}
+.inputSignUp {
+  width: 100%;
+}
+.labelSignUp {
+  margin-bottom: 0.8em;
+}
+.labelSignUp span {
+  margin-bottom: 0.6em;
+}
+.textStartSignUp {
+  margin-bottom: 0.67em;
 }
