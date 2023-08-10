@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/form/static/css/main.65a423a7.css",
+    "main.js": "/form/static/js/main.49c3d134.js",
+    "static/media/girl.png": "/form/static/media/girl.e8908437362bf2a07d30.png",
+    "static/media/cardBg.png": "/form/static/media/cardBg.370178c82f53f8f2b1e7.png",
+    "static/media/frameBg.png": "/form/static/media/frameBg.094acba984f7813797d9.png",
+    "static/media/box2.png": "/form/static/media/box2.ba108694eee977ef57a0.png",
+    "static/media/bg.png": "/form/static/media/bg.5e6d476c99d09dd5b819.png",
+    "static/media/aiTextBox.png": "/form/static/media/aiTextBox.c8e441c381918ae5f616.png",
+    "static/media/bonus2.png": "/form/static/media/bonus2.cf7f8c8ed95d6aa2da24.png",
+    "static/media/bonus3.png": "/form/static/media/bonus3.9a08c3853964523c2a3a.png",
+    "static/media/box3.png": "/form/static/media/box3.1770e25d7358f943cdf1.png",
+    "static/media/bonus1.png": "/form/static/media/bonus1.cba4542c7f713562c4ad.png",
+    "static/media/box1.png": "/form/static/media/box1.8d990ba66f6d8d18728c.png",
+    "index.html": "/form/index.html",
+    "main.65a423a7.css.map": "/form/static/css/main.65a423a7.css.map",
+    "main.49c3d134.js.map": "/form/static/js/main.49c3d134.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.65a423a7.css",
+    "static/js/main.49c3d134.js"
+  ]
+}
