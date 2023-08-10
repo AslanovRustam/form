@@ -4,18 +4,18 @@ import Form from "../Form/Form";
 import Button from "../Button/Button";
 import girl from "../../images/girl.png";
 import bg from "../../images/bg.png";
-// import cardBg from "../../images/cardBg.png";
 import s from "./main.module.css";
 
-export default function Main() {
-  const [step, setStep] = useState(1);
+export default function Main({ step, setStep }) {
   const [formData, setFormData] = useState({
     age: { day: "", month: "", year: "" },
     box: "box2",
     email: "",
     password: "",
     adult: false,
+    agreement: false,
   });
+  const [wrongInput, setWrongInput] = useState("");
 
   useEffect(() => {
     checkAdult();
@@ -69,14 +69,43 @@ export default function Main() {
     });
   };
 
+  const onLogin = (e) => {
+    const { value, name } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+    validateEmail(formData.email);
+  };
+
   const onNextStep = () => {
     if (formData.adult) {
       setStep(step + 1);
     }
   };
+
+  const validateEmail = (value) => {
+    const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i;
+    if (!emailRegex.test(value)) {
+      setWrongInput("wrong email");
+      return;
+    }
+    setWrongInput("");
+  };
+
+  const onSubmit = (e) => {
+    e.preventDefault();
+    const checkSubmit =
+      formData.agreement && formData.email && formData.password && !wrongInput;
+    if (!checkSubmit) {
+      return;
+    }
+    setStep(5);
+    console.log("formData", formData);
+  };
+
   return (
     <div className={s.main}>
-      {/* <img className={s.cardBg} src={cardBg} alt="cardBg" /> */}
       <img className={s.bg} src={bg} alt="bg" />
       <img className={s.girl} src={girl} alt="AI girl" />
       <Text text={text()} />
@@ -86,8 +115,16 @@ export default function Main() {
         onSelectBox={onSelectBox}
         setFormData={setFormData}
         dateInput={dateInput}
+        onLogin={onLogin}
+        wrongInput={wrongInput}
       />
-      <Button step={step} adult={formData.adult} click={onNextStep} />
+      <Button
+        step={step}
+        formData={formData}
+        click={onNextStep}
+        onSubmit={onSubmit}
+        wrongInput={wrongInput}
+      />
     </div>
   );
 }

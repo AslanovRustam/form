@@ -1,8 +1,12 @@
 import box1 from "../../images/box1.png";
 import box2 from "../../images/box2.png";
 import box3 from "../../images/box3.png";
+import { ReactComponent as Mail } from "../../images/mail.svg";
+import { ReactComponent as Pass } from "../../images/pass.svg";
+import { ReactComponent as Eye } from "../../images/eye.svg";
 import { data } from "../../data";
 import s from "./form.module.css";
+import { useState } from "react";
 
 export default function Form({
   step,
@@ -10,7 +14,18 @@ export default function Form({
   onSelectBox,
   setFormData,
   dateInput,
+  onLogin,
+  wrongInput,
 }) {
+  const [passwordType, setPasswordType] = useState("password");
+  const togglePassword = () => {
+    if (passwordType === "password") {
+      setPasswordType("text");
+      return;
+    }
+    setPasswordType("password");
+  };
+
   const renderForm = () => {
     switch (step) {
       case 1:
@@ -151,28 +166,56 @@ export default function Form({
               я создам для вас аккаунт, на который будут начислены
               сгенерированные бонусы
             </p>
+
             <form className={s.formSignUp}>
               <label className={s.labelSignUp}>
                 <span>Email</span>
+                <Mail className={s.inputIcon} />
                 <input
                   className={s.inputSignUp}
                   type="email"
                   name="email"
                   value={formData.email}
-                  onChange={dateInput}
+                  onChange={onLogin}
                   placeholder="adamweiss@gmail.com"
+                  required
                 />
+                {wrongInput && <p className={s.wrongInput}>{wrongInput}</p>}
               </label>
               <label className={s.labelSignUp}>
                 <span>Password</span>
+                <Pass className={s.inputIcon} />
                 <input
                   className={s.inputSignUp}
-                  type="password"
+                  type={passwordType}
                   name="password"
+                  minLength="3"
                   value={formData.password}
-                  onChange={dateInput}
+                  onChange={onLogin}
                   placeholder="************"
+                  required
                 />
+                <Eye className={s.showIcon} onClick={togglePassword} />
+              </label>
+              <label className={s.labelCheckboxAgr}>
+                <input
+                  className={s.checkBox}
+                  name="agreement"
+                  checked={formData.agreement}
+                  value={formData.agreement}
+                  onChange={() => {
+                    setFormData({
+                      ...formData,
+                      agreement: !formData.agreement,
+                    });
+                  }}
+                  type="checkbox"
+                />
+                <p className={s.textAgr}>
+                  By ticking this box to register for this website, the user
+                  declares to be over 18 years old and to have read, understood
+                  and accepted the Terms and Conditions.
+                </p>
               </label>
             </form>
           </>

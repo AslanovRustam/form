@@ -29,7 +29,8 @@
 }
 .label,
 .labelCheckbox,
-.labelSignUp {
+.labelSignUp,
+.labelCheckboxAgr {
   font-size: 1.165em;
   display: flex;
   flex-direction: column;
@@ -42,6 +43,8 @@
   width: 7.6em;
   padding: 0.8em;
   border-radius: 0.8em;
+  border: none;
+  outline: 0.1em solid transparent;
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -140,8 +143,18 @@ input::-webkit-inner-spin-button {
 }
 .inputSignUp {
   width: 100%;
+  padding-left: 4em;
+  border: none;
+  outline: none;
+}
+.input:hover,
+.input:focus,
+.inputSignUp:hover,
+.inputSignUp:focus {
+  outline-color: var(--violet);
 }
 .labelSignUp {
+  position: relative;
   margin-bottom: 0.8em;
 }
 .labelSignUp span {
@@ -149,4 +162,36 @@ input::-webkit-inner-spin-button {
 }
 .textStartSignUp {
   margin-bottom: 0.67em;
+}
+.inputIcon {
+  position: absolute;
+  width: 2em;
+  bottom: 0.5em;
+  left: 1.3em;
+  fill: var(--grey2);
+}
+.labelCheckboxAgr {
+  margin-top: 0.8em;
+  display: grid;
+  grid-template-columns: 0.15fr 1fr;
+  align-items: center;
+}
+.textAgr {
+  /* text-align: center; */
+  font-size: 0.9em;
+  line-height: 115%;
+}
+.wrongInput {
+  position: absolute;
+  right: 1em;
+  bottom: 0.4em;
+  color: var(--violet);
+}
+.showIcon {
+  position: absolute;
+  width: 2em;
+  bottom: 0.5em;
+  right: 1.3em;
+  fill: var(--grey2);
+  cursor: pointer;
 }

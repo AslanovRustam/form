@@ -36,3 +36,11 @@
 .adultText {
   color: var(--grey);
 }
+.check {
+  font-size: 1.7em;
+  color: var(--grey);
+  transition: all 0.3s ease-in-out;
+}
+.checkText {
+  color: var(--violet);
+}
