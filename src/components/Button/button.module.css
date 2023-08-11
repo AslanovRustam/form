@@ -38,7 +38,7 @@
 }
 .check {
   font-size: 1.7em;
-  color: var(--grey);
+  color: var(--grey2);
   transition: all 0.3s ease-in-out;
 }
 .checkText {

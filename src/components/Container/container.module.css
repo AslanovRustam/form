@@ -12,3 +12,9 @@
   background: var(--bg);
   backdrop-filter: blur(0.2em);
 }
+@media (orientation: landscape) {
+  .section {
+    background-image: url(../../images/frameBgDesc.png);
+    background-size: 100vw auto;
+  }
+}
