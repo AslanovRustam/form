@@ -12,17 +12,17 @@
   margin-top: 23em;
   z-index: -1;
 }
-.girl {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: -1;
-}
-.bg {
-  width: 43.47em;
-  position: absolute;
-  top: 5em;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: -1;
+
+@media (orientation: landscape) {
+  .main {
+    position: relative;
+    width: 48.067em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url("../../images/cardBgDesctop.png");
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
 }

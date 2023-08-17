@@ -2,8 +2,6 @@ import { useState, useEffect } from "react";
 import Text from "../Text/Text";
 import Form from "../Form/Form";
 import Button from "../Button/Button";
-import girl from "../../images/girl.png";
-import bg from "../../images/bg.png";
 import s from "./main.module.css";
 
 export default function Main({ step, setStep }) {
@@ -46,10 +44,10 @@ export default function Main({ step, setStep }) {
     if (day === "" || month === "" || year === "") {
       return 0;
     }
-    const now = new Date(); //Текущя дата
-    const today = new Date(now.getFullYear(), now.getMonth(), now.getDate()); //Текущя дата без времени
-    const dob = new Date(Number(year), Number(month), Number(day)); //Дата рождения
-    const dobnow = new Date(today.getFullYear(), dob.getMonth(), dob.getDate()); //ДР в текущем году
+    const now = new Date(); //current date
+    const today = new Date(now.getFullYear(), now.getMonth(), now.getDate()); //current date w/o time
+    const dob = new Date(Number(year), Number(month), Number(day)); //date of birthd
+    const dobnow = new Date(today.getFullYear(), dob.getMonth(), dob.getDate()); //BD in current year
     let age = today.getFullYear() - dob.getFullYear();
     if (today < dobnow) {
       age = age - 1;
@@ -106,8 +104,6 @@ export default function Main({ step, setStep }) {
 
   return (
     <div className={s.main}>
-      <img className={s.bg} src={bg} alt="bg" />
-      <img className={s.girl} src={girl} alt="AI girl" />
       <Text text={text()} />
       <Form
         step={step}

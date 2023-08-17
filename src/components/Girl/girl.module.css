@@ -1,0 +1,30 @@
+.girl {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+.bg {
+  width: 43.47em;
+  position: absolute;
+  top: 5em;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+@media (orientation: landscape) {
+  .girl {
+    width: 28em;
+    left: 83em;
+    top: auto;
+    bottom: -1em;
+    z-index: -1;
+  }
+  .bg {
+    width: 45em;
+    top: auto;
+    left: 65%;
+    bottom: 10em;
+  }
+}

@@ -13,7 +13,6 @@
   border-radius: 50%;
   font-weight: 700;
   text-transform: uppercase;
-  /* margin-top: 3.2em; */
   margin-top: 10.5em;
 }
 .btn {
@@ -43,4 +42,11 @@
 }
 .checkText {
   color: var(--violet);
+}
+@media (orientation: landscape) {
+  .container {
+    margin-top: -4.5em;
+    left: 10.9em;
+    transform: translate(0);
+  }
 }

@@ -41,5 +41,6 @@ video {
   html,
   body {
     font-size: 0.833vw;
+    overflow: hidden;
   }
 }

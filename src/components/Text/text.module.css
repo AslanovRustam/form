@@ -3,7 +3,6 @@
   width: 29.3em;
   margin: 0 auto;
   padding-top: 39em;
-  /* top: -52em; */
 }
 .image {
   width: 100%;
@@ -14,4 +13,15 @@
   margin-left: 1.5em;
   font-size: 1.63em;
   font-weight: 500;
+}
+@media (orientation: landscape) {
+  .container {
+    width: 22em;
+    margin-left: 6.1em;
+    padding-top: 39em;
+    top: -29em;
+  }
+  .text {
+    font-size: 1.2em;
+  }
 }

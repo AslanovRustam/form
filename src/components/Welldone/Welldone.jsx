@@ -7,14 +7,14 @@ export default function Welldone() {
       <img className={s.girl} src={girl} alt="girl AI" />
       <div className={s.box}>
         <p className={s.titleGreat}>
-          Отлично!<br></br> Остался последний шаг:
+          Отлично!<br className={s.hide}></br> Остался последний шаг:
         </p>
         <p className={s.count}>
-          пополните ваш счет<br></br> чтобы начать игру
+          пополните ваш счет<br className={s.hide}></br> чтобы начать игру
         </p>
         <p className={s.economy}>100% экономии! </p>
         <p className={s.bonus}>
-          50$ депозит + <br></br>50$ бонус
+          50$ депозит + <br className={s.hide}></br>50$ бонус
         </p>
         <button
           type="button"

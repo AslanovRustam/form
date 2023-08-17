@@ -177,7 +177,6 @@ input::-webkit-inner-spin-button {
   align-items: center;
 }
 .textAgr {
-  /* text-align: center; */
   font-size: 0.9em;
   line-height: 115%;
 }
@@ -194,4 +193,16 @@ input::-webkit-inner-spin-button {
   right: 1.3em;
   fill: var(--grey2);
   cursor: pointer;
+}
+@media (orientation: landscape) {
+  .container {
+    font-size: 0.7em;
+    transform: translate(0);
+    top: 25em;
+    left: 9em;
+  }
+  .marginTop {
+    position: relative;
+    top: -2em;
+  }
 }

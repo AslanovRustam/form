@@ -1,12 +1,12 @@
+import { useState } from "react";
+import { data } from "../../data";
 import box1 from "../../images/box1.png";
 import box2 from "../../images/box2.png";
 import box3 from "../../images/box3.png";
 import { ReactComponent as Mail } from "../../images/mail.svg";
 import { ReactComponent as Pass } from "../../images/pass.svg";
 import { ReactComponent as Eye } from "../../images/eye.svg";
-import { data } from "../../data";
 import s from "./form.module.css";
-import { useState } from "react";
 
 export default function Form({
   step,
@@ -142,7 +142,7 @@ export default function Form({
         );
       case 3:
         return (
-          <>
+          <div className={s.marginTop}>
             <p className={s.textStart}>Вам начислено:</p>
             <ul className={s.list}>
               {data.map(({ id, image, title, description }) => (
@@ -157,7 +157,7 @@ export default function Form({
               ))}
             </ul>
             <p className={s.text}>Следуйте далее, что бы забрать бонусы</p>
-          </>
+          </div>
         );
       case 4:
         return (
