@@ -4,7 +4,7 @@ import Form from "../Form/Form";
 import Button from "../Button/Button";
 import s from "./main.module.css";
 
-export default function Main({ step, setStep }) {
+export default function Main({ step, setStep, Trans, t }) {
   const [formData, setFormData] = useState({
     age: { day: "", month: "", year: "" },
     box: "box2",
@@ -37,6 +37,7 @@ export default function Main({ step, setStep }) {
         return null;
     }
   };
+
   const checkAdult = () => {
     const {
       age: { day, month, year },
@@ -113,6 +114,8 @@ export default function Main({ step, setStep }) {
         dateInput={dateInput}
         onLogin={onLogin}
         wrongInput={wrongInput}
+        Trans={Trans}
+        t={t}
       />
       <Button
         step={step}

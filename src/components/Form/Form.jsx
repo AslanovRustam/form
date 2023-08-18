@@ -16,6 +16,8 @@ export default function Form({
   dateInput,
   onLogin,
   wrongInput,
+  Trans,
+  t,
 }) {
   const [passwordType, setPasswordType] = useState("password");
   const togglePassword = () => {
@@ -32,15 +34,13 @@ export default function Form({
         return (
           <>
             <p className={s.text}>
-              Я — искусственный ителлект игровой платформы WEISS.<br></br>
-              <br></br>Моя задача — сгенерировать специальные бонусы для вас,
-              чтобы вы получили максимально яркий игровой опыт.
+              <Trans i18nKey="form.step_1.paragraf_1" />
             </p>
-            <p className={s.textViolet}>Доступ строго 18+</p>
-            <p className={s.text}>Введите дату вашего рождения:</p>
+            <p className={s.textViolet}>{t("form.step_1.paragraf_2")}</p>
+            <p className={s.text}>{t("form.step_1.paragraf_3")}</p>
             <form className={s.form}>
               <label className={s.label}>
-                <span>День</span>
+                <span>{t("form.step_1.day")}</span>
                 <input
                   className={s.input}
                   type="number"
@@ -51,7 +51,7 @@ export default function Form({
                 />
               </label>
               <label className={s.label}>
-                <span>Месяц</span>
+                <span>{t("form.step_1.month")}</span>
                 <input
                   className={s.input}
                   type="number"
@@ -62,7 +62,7 @@ export default function Form({
                 />
               </label>
               <label className={s.label}>
-                <span>Год</span>
+                <span>{t("form.step_1.year")}</span>
                 <input
                   className={s.input}
                   type="number"
@@ -79,7 +79,7 @@ export default function Form({
         return (
           <>
             <p className={s.textStart}>
-              Теперь выберите<br></br> один из сикрет-боксов:
+              <Trans i18nKey="form.step_2.paragraf_1" />
             </p>
 
             <form className={s.form}>
@@ -143,7 +143,7 @@ export default function Form({
       case 3:
         return (
           <div className={s.marginTop}>
-            <p className={s.textStart}>Вам начислено:</p>
+            <p className={s.textStart}>{t("form.step_3.paragraf_1")}</p>
             <ul className={s.list}>
               {data.map(({ id, image, title, description }) => (
                 <li className={s.item} key={id}>
@@ -156,20 +156,17 @@ export default function Form({
                 </li>
               ))}
             </ul>
-            <p className={s.text}>Следуйте далее, что бы забрать бонусы</p>
+            <p className={s.text}>{t("form.step_3.paragraf_2")}</p>
           </div>
         );
       case 4:
         return (
           <>
-            <p className={s.textStartSignUp}>
-              я создам для вас аккаунт, на который будут начислены
-              сгенерированные бонусы
-            </p>
+            <p className={s.textStartSignUp}>{t("form.step_4.paragraf_1")}</p>
 
             <form className={s.formSignUp}>
               <label className={s.labelSignUp}>
-                <span>Email</span>
+                <span>{t("form.step_4.email")}</span>
                 <Mail className={s.inputIcon} />
                 <input
                   className={s.inputSignUp}
@@ -183,7 +180,7 @@ export default function Form({
                 {wrongInput && <p className={s.wrongInput}>{wrongInput}</p>}
               </label>
               <label className={s.labelSignUp}>
-                <span>Password</span>
+                <span>{t("form.step_4.password")}</span>
                 <Pass className={s.inputIcon} />
                 <input
                   className={s.inputSignUp}
@@ -211,11 +208,7 @@ export default function Form({
                   }}
                   type="checkbox"
                 />
-                <p className={s.textAgr}>
-                  By ticking this box to register for this website, the user
-                  declares to be over 18 years old and to have read, understood
-                  and accepted the Terms and Conditions.
-                </p>
+                <p className={s.textAgr}>{t("form.step_4.checkBox")}</p>
               </label>
             </form>
           </>

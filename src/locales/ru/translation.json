@@ -1,0 +1,31 @@
+{
+  "main": {
+    "text_Container_step1": "Добро пожаловать!",
+    "text_Container_step2": "Отлично! Продолжим.",
+    "text_Container_step3": "Генерирую подарки...",
+    "text_Container_step4": "Заполните форму"
+  },
+  "form": {
+    "step_1": {
+      "paragraf_1": "Я — искусственный ителлект игровой платформы WEISS.<br></br><br></br>Моя задача — сгенерировать специальные бонусы для вас, чтобы вы получили максимально яркий игровой опыт",
+      "paragraf_2": "Доступ строго 18+",
+      "paragraf_3": "Введите дату вашего рождения:",
+      "day": "День",
+      "month": "Месяц",
+      "year": "Год"
+    },
+    "step_2": {
+      "paragraf_1": "Теперь выберите<br></br> один из сикрет-боксов:"
+    },
+    "step_3": {
+      "paragraf_1": "Вам начислено:",
+      "paragraf_2": "Следуйте далее, что бы забрать бонусы"
+    },
+    "step_4": {
+      "paragraf_1": " я создам для вас аккаунт, на который будут начислены сгенерированные бонусы",
+      "email": "Email",
+      "password": "Password",
+      "checkBox": "By ticking this box to register for this website, the user declares to be over 18 years old and to have read, understood and accepted the Terms and Conditions."
+    }
+  }
+}

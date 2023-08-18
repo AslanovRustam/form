@@ -1,0 +1,31 @@
+{
+  "main": {
+    "text_Container_step1": "Welcome!",
+    "text_Container_step2": "Great! Let's continue.",
+    "text_Container_step3": "Generate gifts...",
+    "text_Container_step4": "Fill the form"
+  },
+  "form": {
+    "step_1": {
+      "paragraf_1": "I am the artificial intelligence of the WEISS gaming platform.<br></br><br></br>My task is to generate special bonuses for you so that you get the most vivid gaming experience",
+      "paragraf_2": "Access strictly 18+",
+      "paragraf_3": "Enter your date of birth:",
+      "day": "Day",
+      "month": "Month",
+      "year": "Year"
+    },
+    "step_2": {
+      "paragraf_1": "Now select<br></br> one of the secret boxes:"
+    },
+    "step_3": {
+      "paragraf_1": "You have been credited:",
+      "paragraf_2": "Follow below to claim bonuses"
+    },
+    "step_4": {
+      "paragraf_1": "I will create an account for you, to which the generated bonuses will be credited",
+      "email": "Email",
+      "password": "Password",
+      "checkBox": "By ticking this box to register for this website, the user declares to be over 18 years old and to have read, understood and accepted the Terms and Conditions."
+    }
+  }
+}
