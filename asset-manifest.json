@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/form/static/css/main.5bc4ff5c.css",
-    "main.js": "/form/static/js/main.9e62aa3e.js",
+    "main.css": "/form/static/css/main.6c5121f7.css",
+    "main.js": "/form/static/js/main.4a715a39.js",
     "static/media/cardBgDesctop.png": "/form/static/media/cardBgDesctop.322e91ff00210387baf0.png",
     "static/media/frameBgDesc.png": "/form/static/media/frameBgDesc.64b0969793e388de30de.png",
     "static/media/girl.png": "/form/static/media/girl.e8908437362bf2a07d30.png",
@@ -17,15 +17,18 @@
     "static/media/box3.png": "/form/static/media/box3.1770e25d7358f943cdf1.png",
     "static/media/bonus1.png": "/form/static/media/bonus1.cba4542c7f713562c4ad.png",
     "static/media/box1.png": "/form/static/media/box1.8d990ba66f6d8d18728c.png",
+    "static/media/earth.svg": "/form/static/media/earth.e60f4c06e235bf6dfd262ca1517b2c73.svg",
     "static/media/eye.svg": "/form/static/media/eye.0f0289a174f23aabebb03076dd52b89b.svg",
     "static/media/pass.svg": "/form/static/media/pass.41782360b18503d368550f9b24d95ec4.svg",
     "static/media/mail.svg": "/form/static/media/mail.05cd215592f7f208bd9ae4df1e44ef9f.svg",
     "index.html": "/form/index.html",
-    "main.5bc4ff5c.css.map": "/form/static/css/main.5bc4ff5c.css.map",
-    "main.9e62aa3e.js.map": "/form/static/js/main.9e62aa3e.js.map"
+    "static/media/arrow_drop_down.svg": "/form/static/media/arrow_drop_down.f06c2f6a4f7839bcc478aebb5314ad11.svg",
+    "static/media/getFetch.cjs": "/form/static/media/getFetch.40f37ddea2378391108f.cjs",
+    "main.6c5121f7.css.map": "/form/static/css/main.6c5121f7.css.map",
+    "main.4a715a39.js.map": "/form/static/js/main.4a715a39.js.map"
   },
   "entrypoints": [
-    "static/css/main.5bc4ff5c.css",
-    "static/js/main.9e62aa3e.js"
+    "static/css/main.6c5121f7.css",
+    "static/js/main.4a715a39.js"
   ]
 }
