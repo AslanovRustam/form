@@ -3,6 +3,7 @@ import Text from "../Text/Text";
 import Form from "../Form/Form";
 import Button from "../Button/Button";
 import s from "./main.module.css";
+import TranslationBtn from "../Translation/TranslationBtn";
 
 export default function Main({ step, setStep, Trans, t }) {
   const [formData, setFormData] = useState({
@@ -26,13 +27,13 @@ export default function Main({ step, setStep, Trans, t }) {
   const text = () => {
     switch (step) {
       case 1:
-        return "Добро пожаловать!";
+        return <Trans i18nKey="main.text_Container_step1" />;
       case 2:
-        return "Отлично! Продолжим.";
+        return <Trans i18nKey="main.text_Container_step2" />;
       case 3:
-        return "Генерирую подарки...";
+        return <Trans i18nKey="main.text_Container_step3" />;
       case 4:
-        return "Заполните форму";
+        return <Trans i18nKey="main.text_Container_step4" />;
       default:
         return null;
     }
@@ -105,6 +106,7 @@ export default function Main({ step, setStep, Trans, t }) {
 
   return (
     <div className={s.main}>
+      <TranslationBtn />
       <Text text={text()} />
       <Form
         step={step}

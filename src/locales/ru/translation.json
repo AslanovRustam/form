@@ -25,7 +25,28 @@
       "paragraf_1": " я создам для вас аккаунт, на который будут начислены сгенерированные бонусы",
       "email": "Email",
       "password": "Password",
-      "checkBox": "By ticking this box to register for this website, the user declares to be over 18 years old and to have read, understood and accepted the Terms and Conditions."
+      "checkBox": "Поставив отметку в этом поле для регистрации на этом веб-сайте, пользователь заявляет, что ему исполнилось 18 лет, и что он прочитал, понял и принял Условия использования."
     }
+  },
+  "bonuses": {
+    "bonus_1": {
+      "title": "140 бесплатных спинов",
+      "description": "Вращайте бесплатно игровые слоты и забирайте выигрыш."
+    },
+    "bonus_2": {
+      "title": "450% бонус на пополнения ",
+      "description": "получите дополнительные средства для ставок на спортивные события"
+    },
+    "bonus_3": {
+      "title": "15 WEFT",
+      "description": "на ваш баланс будут начислены крипто токены"
+    }
+  },
+  "wellDone": {
+    "paragraf_1": "Отлично!<1 className={s.hide}></1> Остался последний шаг:",
+    "paragraf_2": "пополните ваш счет<1 className={s.hide}></1> чтобы начать игру",
+    "paragraf_3": "100% экономии! ",
+    "paragraf_4": "50$ депозит + <1 className={s.hide}></1>50$ бонус",
+    "paragraf_5": "Пополнить счет"
   }
 }

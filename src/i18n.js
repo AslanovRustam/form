@@ -8,6 +8,9 @@ import translationRU from "./locales/ru/translation.json";
 import translationUA from "./locales/ua/translation.json";
 
 const resources = {
+  ua: {
+    translation: translationUA,
+  },
   en: {
     translation: translationEN,
   },
@@ -16,9 +19,6 @@ const resources = {
   },
   ru: {
     translation: translationRU,
-  },
-  ua: {
-    translation: translationUA,
   },
 };
 

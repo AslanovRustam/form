@@ -27,5 +27,26 @@
       "password": "Password",
       "checkBox": "By ticking this box to register for this website, the user declares to be over 18 years old and to have read, understood and accepted the Terms and Conditions."
     }
+  },
+  "bonuses": {
+    "bonus_1": {
+      "title": "140 FREE SPIN",
+      "description": "Spin free slots and collect winnings."
+    },
+    "bonus_2": {
+      "title": "450% deposit bonus",
+      "description": "get extra funds for sports betting"
+    },
+    "bonus_3": {
+      "title": "15 WEFT",
+      "description": "crypto tokens will be credited to your balance"
+    }
+  },
+  "wellDone": {
+    "paragraf_1": "Great!<1 className={s.hide}></1> The last step remains:",
+    "paragraf_2": "top up your account<1 className={s.hide}></1> to start the game",
+    "paragraf_3": "100% savings!",
+    "paragraf_4": "$50 deposit + <1 className={s.hide}></1>$50 bonus",
+    "paragraf_5": "Top up account"
   }
 }

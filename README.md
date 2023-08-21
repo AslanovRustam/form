@@ -1,7 +1,7 @@
 # AI form
 
 ![alt text](src/images/readme.jpg "description")
-This is an application built with React, HTML, CSS and JS. It allows users to fill the form with AI design.
+It's an app built with React, HTML, CSS and JS. It allows users to fill out a multilingual AI-designed form.
 
 ### Installation
 

@@ -1,8 +1,52 @@
 {
   "main": {
     "text_Container_step1": "Willkommen zurück!",
-    "text_Container_step2": "Großartig! Lass uns weitermachen.",
+    "text_Container_step2": "Großartig! Weitermachen.",
     "text_Container_step3": "Geschenke generieren...",
     "text_Container_step4": "Fülle das Formular aus"
+  },
+  "form": {
+    "step_1": {
+      "paragraf_1": "Ich bin die künstliche Intelligenz der WEISS-Gaming-Plattform.<br></br><br></br>Meine Aufgabe ist es, spezielle Boni für Sie zu generieren, damit Sie das lebendigste Spielerlebnis erhalten",
+      "paragraf_2": "Zugang ausschließlich ab 18 Jahren",
+      "paragraf_3": "Gib dein Geburtsdatum ein:",
+      "day": "Tag",
+      "month": "Monat",
+      "year": "Jahr"
+    },
+    "step_2": {
+      "paragraf_1": "Wählen Sie nun<br></br> eine der Geheimboxen aus:"
+    },
+    "step_3": {
+      "paragraf_1": "Ihnen wurde gutgeschrieben:",
+      "paragraf_2": "Folgen Sie unten, um Boni zu erhalten"
+    },
+    "step_4": {
+      "paragraf_1": "Ich erstelle für Sie ein Konto, dem die generierten Boni gutgeschrieben werden",
+      "email": "Email",
+      "password": "Passwort",
+      "checkBox": "Durch Ankreuzen dieses Kästchens zur Registrierung für diese Website erklärt der Nutzer, über 18 Jahre alt zu sein und die Allgemeinen Geschäftsbedingungen gelesen, verstanden und akzeptiert zu haben."
+    }
+  },
+  "bonuses": {
+    "bonus_1": {
+      "title": "140 Freispiele",
+      "description": "Drehen Sie kostenlose Slots und sammeln Sie Gewinne."
+    },
+    "bonus_2": {
+      "title": "450 % Einzahlungsbonus",
+      "description": "Holen Sie sich zusätzliches Geld für Sportwetten"
+    },
+    "bonus_3": {
+      "title": "15 WEFT",
+      "description": "Krypto-Tokens werden Ihrem Guthaben gutgeschrieben"
+    }
+  },
+  "wellDone": {
+    "paragraf_1": "Großartig!<1 className={s.hide}></1> Der letzte Schritt bleibt:",
+    "paragraf_2": "Laden Sie Ihr Konto auf<1 className={s.hide}></1>, um das Spiel zu starten",
+    "paragraf_3": "100 % Ersparnis!",
+    "paragraf_4": "50 $ Einzahlung + <1 className={s.hide}></1>50 $ Bonus",
+    "paragraf_5": "Konto aufladen"
   }
 }

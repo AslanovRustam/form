@@ -1,0 +1,47 @@
+.container {
+  position: absolute;
+  top: 4em;
+  right: 11em;
+  background-color: #d6d6d6;
+  border-radius: 1em;
+}
+
+.select {
+  width: 4.8em;
+  margin-left: 0.5em;
+  border-radius: 1em;
+  padding: 0.625em 1.5em;
+  background-color: #d6d6d6;
+  color: #646464;
+  border: 0.1em solid transparent;
+  outline: none;
+  -webkit-appearance: none;
+  z-index: 2;
+}
+.earthIcon,
+.arrowIcon {
+  position: absolute;
+  width: 1em;
+  fill: #646464;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  transition: all 0.3s ease-in-out;
+}
+.earthIcon {
+  left: 0.6em;
+}
+.arrowIcon {
+  right: 0.4em;
+}
+.form:hover .earthIcon,
+.form:hover .arrowIcon {
+  fill: #9665eb;
+}
+@media (orientation: portrait) {
+  .container {
+    font-size: 1.4em;
+    top: 23.3em;
+    right: 1.1em;
+  }
+}

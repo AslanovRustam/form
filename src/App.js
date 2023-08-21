@@ -13,7 +13,7 @@ function App() {
       {step < 5 ? (
         <Main step={step} setStep={setStep} Trans={Trans} t={t} />
       ) : (
-        <Welldone />
+        <Welldone Trans={Trans} t={t} />
       )}
       <Girl />
     </Container>
