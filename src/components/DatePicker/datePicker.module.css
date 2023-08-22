@@ -1,0 +1,34 @@
+.form {
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+  gap: 0.8em;
+}
+.label {
+  font-size: 1.165em;
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  width: 7.6em;
+  padding: 0.8em;
+  border-radius: 0.8em;
+  border: none;
+  outline: 0.1em solid transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input:hover,
+.input:focus,
+.inputSignUp:hover,
+.inputSignUp:focus {
+  outline-color: var(--violet);
+}

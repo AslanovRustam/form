@@ -38,6 +38,7 @@
 .form:hover .arrowIcon {
   fill: #9665eb;
 }
+
 @media (orientation: portrait) {
   .container {
     font-size: 1.4em;

@@ -7,7 +7,7 @@ import TranslationBtn from "../Translation/TranslationBtn";
 
 export default function Main({ step, setStep, Trans, t }) {
   const [formData, setFormData] = useState({
-    age: { day: "", month: "", year: "" },
+    age: { day: 1, month: 1, year: 2010 },
     box: "box2",
     email: "",
     password: "",
@@ -119,6 +119,7 @@ export default function Main({ step, setStep, Trans, t }) {
         Trans={Trans}
         t={t}
       />
+
       <Button
         step={step}
         formData={formData}

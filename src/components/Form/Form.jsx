@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { data } from "../../data";
+import DatePicker from "../DatePicker/DatePicker";
 import box1 from "../../images/box1.png";
 import box2 from "../../images/box2.png";
 import box3 from "../../images/box3.png";
@@ -20,6 +21,7 @@ export default function Form({
   t,
 }) {
   const [passwordType, setPasswordType] = useState("password");
+
   const togglePassword = () => {
     if (passwordType === "password") {
       setPasswordType("text");
@@ -38,41 +40,7 @@ export default function Form({
             </p>
             <p className={s.textViolet}>{t("form.step_1.paragraf_2")}</p>
             <p className={s.text}>{t("form.step_1.paragraf_3")}</p>
-            <form className={s.form}>
-              <label className={s.label}>
-                <span>{t("form.step_1.day")}</span>
-                <input
-                  className={s.input}
-                  type="number"
-                  name="day"
-                  value={formData.age.day}
-                  onChange={dateInput}
-                  placeholder="01"
-                />
-              </label>
-              <label className={s.label}>
-                <span>{t("form.step_1.month")}</span>
-                <input
-                  className={s.input}
-                  type="number"
-                  name="month"
-                  value={formData.age.month}
-                  onChange={dateInput}
-                  placeholder="11"
-                />
-              </label>
-              <label className={s.label}>
-                <span>{t("form.step_1.year")}</span>
-                <input
-                  className={s.input}
-                  type="number"
-                  name="year"
-                  value={formData.age.year}
-                  onChange={dateInput}
-                  placeholder="1990"
-                />
-              </label>
-            </form>
+            <DatePicker formData={formData} dateInput={dateInput} t={t} />
           </>
         );
       case 2:
@@ -220,3 +188,40 @@ export default function Form({
   };
   return <div className={s.container}>{renderForm()}</div>;
 }
+// {
+/* <form className={s.form}>
+              <label className={s.label}>
+                <span>{t("form.step_1.day")}</span>
+                <input
+                  className={s.input}
+                  type="number"
+                  name="day"
+                  value={formData.age.day}
+                  onChange={dateInput}
+                  placeholder="01"
+                />
+              </label>
+              <label className={s.label}>
+                <span>{t("form.step_1.month")}</span>
+                <input
+                  className={s.input}
+                  type="number"
+                  name="month"
+                  value={formData.age.month}
+                  onChange={dateInput}
+                  placeholder="11"
+                />
+              </label>
+              <label className={s.label}>
+                <span>{t("form.step_1.year")}</span>
+                <input
+                  className={s.input}
+                  type="number"
+                  name="year"
+                  value={formData.age.year}
+                  onChange={dateInput}
+                  placeholder="1990"
+                />
+              </label>
+            </form> */
+// }

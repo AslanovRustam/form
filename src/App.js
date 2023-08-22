@@ -15,7 +15,7 @@ function App() {
       ) : (
         <Welldone Trans={Trans} t={t} />
       )}
-      <Girl />
+      {step !== 5 && <Girl />}
     </Container>
   );
 }

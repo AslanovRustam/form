@@ -21,7 +21,7 @@ export default function TranslationBtn() {
     setLanguage(e.target.value);
     i18n.changeLanguage(e.target.value);
   };
-  console.log(lang);
+
   return (
     <div className={s.container}>
       <form className={s.form}>
