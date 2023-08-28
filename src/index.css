@@ -22,7 +22,7 @@ body {
   font-weight: 400;
   line-height: normal;
   height: 100dvh;
-  overflow-x: hidden;
+  overflow: hidden;
   color: var(--white);
 }
 * {
@@ -56,6 +56,5 @@ video {
   html,
   body {
     font-size: 0.833vw;
-    overflow: hidden;
   }
 }

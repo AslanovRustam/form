@@ -1,6 +1,6 @@
 # AI form
 
-![alt text](src/images/readme.gif "gif")
+![alt text](src/images/readmeEn.gif "gif")
 It's an app built with React, HTML, CSS and JS. It allows users to fill out a multilingual AI-designed form.
 ![alt text](src/images/readme.jpg "description")
 
