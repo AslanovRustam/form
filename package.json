@@ -4,6 +4,9 @@
   "private": true,
   "homepage": "https://AslanovRustam.github.io/form",
   "dependencies": {
+    "@esotericsoftware/spine-core": "^4.2.18",
+    "@esotericsoftware/spine-player": "^4.2.18",
+    "@esotericsoftware/spine-webgl": "^4.2.18",
     "gh-pages": "^5.0.0",
     "i18next": "^23.4.4",
     "i18next-browser-languagedetector": "^7.1.0",
