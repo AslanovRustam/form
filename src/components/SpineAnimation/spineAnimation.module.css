@@ -1,0 +1,28 @@
+.spineContainer {
+  position: absolute;
+  width: 50em;
+  height: 65em;
+  max-width: unset;
+  bottom: -8.8em;
+  left: 59em;
+  z-index: 0;
+  transition: opacity 0.4s ease-in-out;
+  pointer-events: none;
+}
+.changeZIndex {
+  left: 85em;
+  z-index: 2;
+  transform: scale(-1, 1);
+}
+@media (orientation: portrait) {
+  .spineContainer {
+    font-size: 1.3em;
+    top: -2em;
+    left: -8em;
+    bottom: 0;
+  }
+  .changeZIndex {
+    left: 4em;
+    top: 14em;
+  }
+}

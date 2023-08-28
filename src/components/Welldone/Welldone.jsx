@@ -4,7 +4,7 @@ import girl from "../../images/girl.png";
 export default function Welldone({ Trans, t }) {
   return (
     <div className={s.container}>
-      <img className={s.girl} src={girl} alt="girl AI" />
+      {/* <img className={s.girl} src={girl} alt="girl AI" /> */}
       <div className={s.box}>
         <p className={s.titleGreat}>
           <Trans i18nKey="wellDone.paragraf_1">
